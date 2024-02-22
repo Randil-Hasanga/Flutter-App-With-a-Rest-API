@@ -17,7 +17,7 @@ class HTTPService {
   Future<Response?> get(String _path) async {
     try {
       String _url = "$_base_url$_path";
-      //print(_url);
+      print(_url);
       Response _response = await dio.get(_url);
       //print(_response);
       return _response;
